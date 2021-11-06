@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Anthony Ni Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Roboto+Slab:wght@100;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body id="pagesomething1">
+    <section class="duneHeader">
+        <a class="page1" href="#main">Skip to main content</a>
+        <nav>
+            <a href="SleepingBearDunes.html"><img src= "../images/michigan-logo.jpg" alt="Michigan logo" id ="logo"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                <ul class ="nav">
+                    <li><a id="page" href="seasons.html" class='link1'>HOME</a></li>
+                    <li><a id="page" href="mackinawisland.html" class='link2'>MACKINAW ISLAND</a></li>
+                    <li><a id="page" href="pictureRocks.html" class='link3'>PICTURE ROCKS</a></li>
+                    <li><a id="page" href="SleepingBearDunes.html" class='link4'>SLEEPING BEARS DUNES</a></li>
+
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box" id="textbox1">
+            <h1>Sleeping Bear Dunes</h1>
+            <p>Sleeping Bear Dunes features immense and magnificent sand dunes, as well as beaches, forests and inland 
+                lakes along a 35-mile strip of the southeastern shore of Lake Michigan. Off the coast, the park also 
+                includes two undeveloped islands, North and South Manitou Islands, which offer a more remote backcountry 
+                experience.
+            </p>
+            <a href="https://www.nps.gov/slbe/index.htm" target="_blank" class="visitbutton">Visit Us To know More</a>
+        </div>
+
+    </section>
+    <main id="main"> 
+    <h2>Gallery</h2>
+    <div class="gallery"> 
+        <img id="dune1" src="../images/dunes2.webp" alt="Sleeping Bears Dunes " class="center"/>
+        <img id="dune2" src="../images/dunes3.jpg" alt="Sleeping Bears Dunes " class="center"/>
+        <img id="dune3" src="../images/dunes4.jpg" alt="Sleeping Bears Dunes " class="center"/>
+        <img id="dune4" src="../images/dunes5.jpg" alt="Sleeping Bears Dunes " class="center"/>
+        <img id="dune4" src="../images/dunes6.jpg" alt="Sleeping Bears Dunes " class="center"/>
+        <img id="dune15" src="../images/dunes1.jpg" alt="Sleeping Bears Dunes " class="center"/>
+
+    </div>
+    </main>
+    <script>
+        var navLinks = document.getElementById("navlinks");
+
+        function showMenu(){
+            navLinks.style.right ="0";
+        }
+        function hideMenu(){
+            navLinks.style.right ="-500px";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif; 
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:url("../images/detroit-michigan.jpg");
+    background-position: center;
+    background-size:cover;
+    position:relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+nav{
+    display:flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 250px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color:#420505;
+    text-decoration: none;
+    font-size: 15px;
+
+}
+.nav-links ul li::after{
+    content:'';
+    width:0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin:auto;
+    transition: 0.3s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #420505;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+
+}
+.text-box h1{
+    font-size: 70px;
+}
+.text-box p{
+    display:flex;
+    margin: 10px 0px 40px;
+    font-size: 30px;
+    color: rgb(204, 0, 0);
+    text-align: center;
+}
+.visitbutton{
+display:inline-block;
+text-decoration: none;
+color:#fff;
+border: 2px solid white;
+padding: 12px 34px;
+font-size: 15px;
+background: transparent;
+position:relative;
+cursor: pointer;
+
+}
+.page1{
+    display:inline-block;
+    text-decoration: none;
+    color:rgb(5, 83, 3);
+    border: 2px solid white;
+    padding: 6px 17px;
+    font-size: 15px;
+    background: transparent;
+    position:relative;
+    cursor: pointer;
+    }
+.visitbutton:hover{
+    border: 1px solid #f44336;
+    transition: 0.5s;
+    background: #f44336;
+}
+.gallery > img{
+    width: 500px;
+    height: 500px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+h2{
+    text-align: center;
+    font-size: 100px;
+
+}
+.gallery{
+    display: grid;
+    width: 100vw; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4fr, 300px);
+
+}
+@keyframes wiggle {
+    from {background-color: red;}
+    to {background-color: yellow;}
+  }
+.gallery > img:hover{
+    border: 5px solid #f44336;
+    animation-name: wiggle;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+.center{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.gallery > div{
+    overflow: hidden; /*won't go outside the divs*/
+} 
+
+@keyframes logo{
+    from{
+        width:50px;
+        opacity: 0;
+    }
+
+    to{
+        width: 250px;
+        opacity: 1;
+    }
+}
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
+nav img{
+    animation-name: spin;
+    animation-duration: 5s;
+}
+nav .fa{
+    display: none;
+}
+
+.picRock{
+    min-height: 100vh;
+    width: 100%;
+    background-image:url("../images/newnewpic.jpg");
+    background-position: center;
+    background-size:cover;
+    position:relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.galleryRocks{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.duneHeader{
+    min-height: 100vh;
+    width: 100%;
+    background-image:url("../images/duneslogo.jpg");
+    background-position: center;
+    background-size:cover;
+    position:relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.rockpics1{
+    width:100%;
+}
+.mack{
+height: 500px;
+    background-image: url(../images/mackinawislandlong.jpg);
+            min-height: 100vh;
+        width: 100%;
+        /* background-image:url("../images/dunesMobileView.jpg"); */
+        background-position: center;
+        background-size:cover;
+        position:relative;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+ .nav .page{
+    font-weight: bold;
+} 
+.page .link1{
+    background-color: blue;
+}
+
+@media(max-width: 700px)
+{
+    .header{
+        min-height: 100vh;
+        width: 100%;
+        background-image:url("../images/detroitsmallscreen.jpg");
+        background-position: center;
+        background-size:cover;
+        position:relative;
+        background-attachment: scroll;
+    
+    }
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display:block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: -200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index:2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: black;
+        margin: 10px;
+        font-size: 22px;
+        cursor:pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+    .text-box h1{
+        font-size: 20px;
+    }
+    .text-box p{
+        display:flex;
+        margin: 10px 0px 40px;
+        font-size: 15px;
+        color: red;
+        text-align: center;
+    }
+    .gallery > img{
+        width: 200px;
+        height: 200px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    h2{
+        text-align: center;
+        font-size: 50px;
+    
+    }
+    .gallery{
+        display: grid;
+        width: 100vw; 
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(10fr, 100px);
+    
+    }
+    .center{
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    .galleryRocks{
+        display: grid;
+        width: 100vw; 
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4fr, 500px);
+    }
+    .galleryRocks img{
+        width: 100%;
+        height: 100%;
+    }
+    .rockpics{
+        height:100%;
+    }
+    .duneHeader{
+        min-height: 100vh;
+        width: 100%;
+        background-image:url("../images/dunesMobileView.jpg");
+        background-position: center;
+        background-size:cover;
+        position:relative;
+        background-attachment: scroll;
+    
+    }
+    .mack{
+        background-image: url(../images/mackinawmobile.jpg);
+        background-attachment: scroll;
+    }
+    .text-box{
+        width: 90%;
+        color: blue;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        height: 90%;
+    
+    }
+}
+@media screen and (prefers-reduced-motion){
+    .gallery > img:hover{
+        animation:none;
+    }
+    nav img{
+        animation:none;
+    }
+}

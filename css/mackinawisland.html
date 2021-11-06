@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Anthony Ni Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Roboto+Slab:wght@100;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body id="pagesomething4">
+    <section class="mack">
+        <a class="page1" href="#main">Skip to main content</a>
+        <nav>
+            <a href="mackinawisland.html"><img src= "../images/pureMichigan.png" alt="michigan logo" id ="logo"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                <ul class="nav">
+                    <li><a class="page" href="seasons.html">HOME</a></li>
+                    <li><a class="page" href="mackinawisland.html" class='active-page'>MACKINAW ISLAND</a></li>
+                    <li><a class="page" href="pictureRocks.html">PICTURED ROCKS</a></li>
+                    <li><a class="page" href="SleepingBearDunes.html">SLEEPING BEARS DUNES</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Mackinaw Island</h1>
+            <p> Mackinac Island is a place where the horse is king, 
+                where the streets have been car-free for over 100 years.  
+                 Mackinac Island is a place full of history where centuries-old 
+                 forts and ancient rock formations have stood the test of time, and where
+                  it seems as though time stands still.   But more than a place to go, Mackinac Island 
+                  is a state of mind. 
+            </p>
+            <a href="https://www.mackinacisland.org/" class="visitbutton">Visit Us To know More</a>
+        </div>
+
+    </section>
+    <main id="main">
+    <h2>Gallery</h2>
+    <div class="galleryRocks"> 
+      <img id="image1" src="../images/mackinaw1.jpeg" alt="Mackinaw island " class="center"/>
+      <img id="image2" src="../images/mackinaw2.jpg" alt="Mackinaw island " class="center"/>
+      <img id="image3" src="../images/mackinaw3.jpg" alt="Mackinaw island " class="center"/>
+      <img id="rockpics" src="../images/mackinaw4.jpg" alt="Mackinaw island " class="center"/>
+      <img id="rockpics1" src="../images/mackinaw5.jpg" alt="Mackinaw island " class="center"/>
+    </div>
+</main>
+    <script>
+        var navLinks = document.getElementById("navlinks");
+
+        function showMenu(){
+            navLinks.style.right ="0";
+        }
+        function hideMenu(){
+            navLinks.style.right ="-500px";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Anthony Ni Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Roboto+Slab:wght@100;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body id="pagesomething2">
+    <section class="header">
+        <a class="page1" href="#main">Skip to main content</a>
+        <nav>
+            <a href="seasons.html"><img src= "../images/pureMichigan.png" alt="michigan logo" id ="logo"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                <ul class="nav">
+                    <li><a href="seasons.html" class='active page'>HOME</a></li>
+                    <li><a  href="mackinawisland.html">MACKINAW ISLAND</a></li>
+                    <li><a href="pictureRocks.html">PICTURE ROCKS</a></li>
+                    <li><a  href="SleepingBearDunes.html">SLEEPING BEARS DUNES</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>WELCOME TO MICHIGAN</h1>
+            <p>Michigan is quite unique among the states in that it is divided into two distint geographic sections, the Upper peninsula, and the Lower peninsula.
+                The Upper and Lower Peninsulas were connected in 1957 with the construction of Big Mac, the Mackinac Bridge.  With 3,177 miles of Great Lakes shoreline it is easy to see why Michigan boasts a  thriving recreational industry, and leads the nation with approximately one million registered pleasure boats. 
+            </p>
+            <a href="https://www.michigan.org/" class="visitbutton">Visit Us To know More</a>
+        </div>
+
+    </section>
+    <main id="main">
+    <h2>Gallery</h2>
+    <div class="gallery"> 
+        <img id="image1" src="../images/Detroit.jpg" alt="Detroit Michigan " class="center"/>
+        <img id="image2" src="../images/grand-rapids-banner.jpg" alt="Grand Rapids Michigan" class="center"/>
+        <img id="image3" src="../images/lakehuron_0.jpg" alt="Lake Huron" class="center"/>
+        <img id="image4" src="../images/living-in-lansing-mi.jpg" alt="Lansing Michigan" class="center"/>
+        <img id="image5" src="../images/michgian stadium.jpg" alt="Michigan Football Stadium" class="center"/>
+        <img id="image6" src="../images/michigan-ann-arbor-800x500.jpg" alt="Ann Arbor Michigan" class="center"/>
+        <img id="image7" src="../images/Kalamazoo-Mich.jpg" alt="Kalamazoo-Mich" class="center" />
+        <img id="image8" src="../images/StateSt.jpg" alt="Ann Arbor Michigan" class="center"/>
+        <img id="image9" src="../images/traversecity.jpg" alt="Traverse City Michigan " class="center"/>
+        <img id="image10" src="../images/Umich.jpg" alt="University of Michigan" class="center"/>
+    </div>
+</main>
+    <script>
+        var navLinks = document.getElementById("navlinks");
+
+        function showMenu(){
+            navLinks.style.right ="0";
+        }
+        function hideMenu(){
+            navLinks.style.right ="-500px";
+        }
+    </script>
+</body>
+</html>
