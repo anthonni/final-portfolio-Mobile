@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Anthony Ni Personal Website</title>
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Roboto+Slab:wght@100;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body id="pagesomething3">
+    <section class="picRock">
+        <a class="page1" href="#main">Skip to main content</a>
+        <nav>
+            <a href="pictureRocks.html"><img src= "images/pureMichigan.png" alt="Michigan logo" id ="logo"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                <ul class="nav">
+                    <li><a class="page" href="seasons.html">HOME</a></li>
+                    <li><a class="page" href="mackinawisland.html">MACKINAW ISLAND</a></li>
+                    <li><a class="page" href="pictureRocks.html" class='active-page'>PICTURED ROCKS</a></li>
+                    <li><a class="page" href="SleepingBearDunes.html">SLEEPING BEARS DUNES</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>PICTURED ROCKS</h1>
+            <p>Unlike any other place on Lake Superior, Pictured Rocks offers the opportunity to explore miles of pristine 
+                beaches, hike nearly
+                 100 miles of trails, view towering sandstone cliffs, and experience the serenity of northern woodlands.
+                In the spring, a new world appears along trails carpeted with the soft beauty of wildflowers. 
+                Summer gives way to warm basking days. Hues of orange, red, and yellow signal the wonder of change 
+                in autumn. In the winter, the raw windy beauty of snow frequents the days though periodically the snow
+                 blazes forth with sunlight.
+            </p>
+            <a href="https://www.nps.gov/piro/learn/nature/geologicformations.htm" class="visitbutton">Visit Us To know More</a>
+        </div>
+
+    </section>
+    <main id="main">
+    <h2>Gallery</h2>
+    <div class="galleryRocks"> 
+      <img id="image1" src="images/picRocksMap.jpg" alt="Map for Pictured Rocks " class="center"/>
+      <img id="image2" src="images/picRocksW.jpg" alt="Pictured Rocks in the winter" class="center"/>
+      <img id="image3" src="images/Pictured-Rocks-Spray-Falls.jpg" alt="Pictured Rocks" class="center"/>
+      <img id="rockpics" src="images/picRocks2.png" alt="Pictured Rocks" class="center"/>
+    </div>
+</main>
+    <script>
+        var navLinks = document.getElementById("navlinks");
+
+        function showMenu(){
+            navLinks.style.right ="0";
+        }
+        function hideMenu(){
+            navLinks.style.right ="-500px";
+        }
+    </script>
+</body>
+</html>
